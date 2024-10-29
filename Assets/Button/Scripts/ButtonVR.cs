@@ -1,8 +1,3 @@
-/**************************************************
-Copyright : Copyright (c) RealaryVR. All rights reserved.
-Description: Script for VR Button functionality.
-***************************************************/
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +8,9 @@ public class ButtonVR : MonoBehaviour
     public GameObject button;
     public UnityEvent onPress;
     public UnityEvent onRelease;
+    public QuestionManager questionManager; // Reference to the QuestionManager
+    public int buttonIndex; // Index of the answer this button represents
+
     GameObject presser;
     AudioSource sound;
     bool isPressed;
@@ -32,6 +30,12 @@ public class ButtonVR : MonoBehaviour
             onPress.Invoke();
             sound.Play();
             isPressed = true;
+
+            // Trigger answer selection in QuestionManager
+            if (questionManager != null)
+            {
+                questionManager.OnAnswerSelected(buttonIndex);
+            }
         }
     }
 
@@ -52,5 +56,4 @@ public class ButtonVR : MonoBehaviour
         sphere.transform.localPosition = new Vector3(0, 1, 2);
         sphere.AddComponent<Rigidbody>();
     }
-
 }
