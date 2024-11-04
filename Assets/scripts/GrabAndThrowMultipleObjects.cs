@@ -6,10 +6,10 @@ public class GrabAndThrowMultipleObjects : MonoBehaviour
 {
     public Transform holdPoint;
     public float throwForce = 500f;
+    public Camera selectedCamera; // Asignar la cámara correcta en el Inspector
 
     private Rigidbody objectRb;
     private bool isHolding = false;
-    private Camera mainCamera;
     private GameObject currentObject; // Referencia al objeto actual que se está agarrando
     private TrailRenderer trailRenderer; // Trail Renderer del objeto actual
     private Vector3 initialMousePosition; // Posición inicial del mouse al agarrar
@@ -17,7 +17,10 @@ public class GrabAndThrowMultipleObjects : MonoBehaviour
 
     void Start()
     {
-        mainCamera = Camera.main;
+        if (selectedCamera == null)
+        {
+            Debug.LogError("No se ha asignado una cámara. Por favor, asigna una en el Inspector.");
+        }
     }
 
     void Update()
@@ -47,7 +50,7 @@ public class GrabAndThrowMultipleObjects : MonoBehaviour
 
     void TryGrabObject()
     {
-        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        Ray ray = selectedCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
         // Detectar si se hace clic sobre un objeto con collider
@@ -90,7 +93,7 @@ public class GrabAndThrowMultipleObjects : MonoBehaviour
         if (mouseMoved)
         {
             // Si el mouse se movió, lanzar el objeto
-            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+            Ray ray = selectedCamera.ScreenPointToRay(Input.mousePosition);
             Vector3 launchDirection;
             RaycastHit hit;
 

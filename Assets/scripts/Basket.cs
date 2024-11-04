@@ -6,6 +6,19 @@ public class Basket : MonoBehaviour
 {
     public ChallengeManager challengeManager; // Referencia al ChallengeManager para notificar cuando se enceste un objeto
 
+    void Start()
+    {
+        if (challengeManager == null)
+        {
+            challengeManager = FindObjectOfType<ChallengeManager>();
+            if (challengeManager == null)
+            {
+                Debug.LogError("No se pudo encontrar un ChallengeManager en la escena.");
+            }
+        }
+    }
+
+
     private void OnTriggerEnter(Collider other)
     {
         // Detectar si el objeto tiene la etiqueta "Throwable"
