@@ -850,7 +850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   holdPoint: {fileID: 1445009331}
   throwForce: 500
-  selectedCamera: {fileID: 0}
+  selectedCamera: {fileID: 951209432}
 --- !u!114 &178555323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17161,11 +17161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 0}
-  m_UpdateMethod: 0
-  m_PositionUnits: 1
-  m_Speed: 1
-  m_Position: 0
 --- !u!1001 &1807217536
 PrefabInstance:
   m_ObjectHideFlags: 0
