@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/marte.unity
     guid: b053cecc4cfc50342904acfa7f7be26e
+  - enabled: 1
+    path: Assets/Scenes/estadisticas.unity
+    guid: 5073bf2f3474aff4c895bd802f2dd4ad
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}

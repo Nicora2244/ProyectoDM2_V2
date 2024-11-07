@@ -4662,6 +4662,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1331325031837446793, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a4fde6e0b21dc224d813ee493157874f, type: 3}
+    - target: {fileID: 1331325031837446793, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331325031837446793, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331325031837446793, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1751009104684378385, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4746,6 +4762,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2918182912891103374, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0442
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918182912891103374, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0442
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918182912891103374, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0442
+      objectReference: {fileID: 0}
     - target: {fileID: 6470040533796105208, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
       propertyPath: m_FontData.m_FontStyle
       value: 1
@@ -4764,6 +4792,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7501664857913640817, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
       propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7852481956638276177, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a4fde6e0b21dc224d813ee493157874f, type: 3}
+    - target: {fileID: 7852481956638276177, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7852481956638276177, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 7852481956638276177, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

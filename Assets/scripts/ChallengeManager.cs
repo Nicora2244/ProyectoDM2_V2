@@ -45,16 +45,15 @@ public class ChallengeManager : MonoBehaviour
 
     public void ObjectScored()
     {
-        // Incrementar el contador de objetos encestados
         objectsScored++;
+        Estadisticas.Instance.objectsScored++; // Actualizar la estadística global
         UpdateChallengeText();
 
-        // Verificar si se ha completado el reto con 3 objetos encestados
         if (objectsScored >= totalObjectsToScore && !questionAnswered)
         {
             challengeText.text = "¡Reto completado!";
             challengeActive = false;
-            ShowQuestionPanel(); // Mostrar el panel de la pregunta
+            ShowQuestionPanel();
         }
     }
 
@@ -111,14 +110,16 @@ public class ChallengeManager : MonoBehaviour
     {
         if (isCorrect)
         {
+            Estadisticas.Instance.correctAnswers++; // Incrementa respuestas correctas
             questionText.text = "¡Respuesta correcta!";
-            StartCoroutine(CompleteChallenge()); // Procede a la siguiente escena
+            StartCoroutine(CompleteChallenge());
         }
         else
         {
+            Estadisticas.Instance.wrongAnswers++; // Incrementa respuestas incorrectas
             questionText.text = "Respuesta incorrecta. Reintenta el reto.";
             questionAnswered = true;
-            Invoke("RestartChallenge", 2f); // Reinicia el desafío después de 2 segundos
+            Invoke("RestartChallenge", 2f);
         }
     }
 

@@ -8623,7 +8623,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -16482,6 +16482,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -280
       objectReference: {fileID: 0}
+    - target: {fileID: 1331325031837446793, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a4fde6e0b21dc224d813ee493157874f, type: 3}
+    - target: {fileID: 1331325031837446793, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331325031837446793, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331325031837446793, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1751009104684378385, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -16594,6 +16610,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2918182912891103374, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0442
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918182912891103374, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0442
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918182912891103374, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0442
+      objectReference: {fileID: 0}
     - target: {fileID: 4827141961266025136, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -16641,6 +16669,22 @@ PrefabInstance:
     - target: {fileID: 7087143078630669450, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 7852481956638276177, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a4fde6e0b21dc224d813ee493157874f, type: 3}
+    - target: {fileID: 7852481956638276177, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7852481956638276177, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 7852481956638276177, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9217954436156364483, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
       propertyPath: m_Colors.m_PressedColor.b
