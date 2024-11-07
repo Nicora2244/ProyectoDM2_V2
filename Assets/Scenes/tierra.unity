@@ -22000,6 +22000,10 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 6877546360249178499, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9217954436156364483, guid: 515160d094685bd41b3b7e71d24e135d, type: 3}
       propertyPath: m_Colors.m_PressedColor.b
       value: 0.9528302
