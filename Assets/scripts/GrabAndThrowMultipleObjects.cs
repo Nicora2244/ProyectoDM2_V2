@@ -5,7 +5,7 @@ using UnityEngine;
 public class GrabAndThrowMultipleObjects : MonoBehaviour
 {
     public Transform holdPoint;
-    public float throwForce = 500f;
+    public float throwForce = 250f;
     public Camera selectedCamera; // Asignar la cámara correcta en el Inspector
 
     private Rigidbody objectRb;
